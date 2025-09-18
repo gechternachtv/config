@@ -1,0 +1,47 @@
+colors:
+  # Default colors
+  primary:
+    background: '0x1d2926'
+    foreground: '0xd096a4'
+
+  # Normal colors
+  normal:
+    black:   '0x060807'
+    red:     '0x953f51'
+    green:   '0x2c815c'
+    yellow:  '0xc1b48e'
+    blue:    '0x008080'
+    magenta: '0x85678f'
+    cyan:    '0x40e0d0'
+    white:   '0x707880'
+
+  # Bright colors
+  bright:
+    black:   '0x373b41'
+    red:     '0xc65169'
+    green:   '0x478c7c'
+    yellow:  '0xc1b48e'
+    blue:    '0xd096a4'
+    magenta: '0xb294bb'
+    cyan:    '0x884e5a'
+    white:   '0xc5c8c6'
+
+window:
+  opacity: 0.96
+  padding:
+    x: 19
+    y: 14
+font:
+  normal:
+    family: terminus
+  size: 9.0
+
+builtin_box_drawing: true
+
+key_bindings:
+  - { key: N, mods: Control, chars: "alacritty & \x0D"  }
+  - { key: K, mods: Control, action: ScrollHalfPageUp    }
+  - { key: J, mods: Control, action: ScrollHalfPageDown   }
+  - { key: Insert,mods: Control, action: Copy}
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
