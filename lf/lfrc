@@ -242,10 +242,10 @@ cmd q $TERM
 
 
 
-map . set hidden!
+map u :clear; unselect;
 map <backspace2> set hidden!
 
-map D delete
+map DD delete
 
 map S &echo $TERM | sh
 
