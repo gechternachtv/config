@@ -95,15 +95,15 @@ echo $file
   case "$mimetype" in
     application/pdf) zathura $file;;
     application/epub+zip) zathura $file;;
-    application/ogg) cvlc $file;;
+    application/ogg) mpv $file;;
     application/json) nvim $file;;
     application/javascript) nvim $file;;
     application/zip) clear && 7zo $file | nvim;;
     inode/*) nvim $file;;
     text/html) firefox $file;;
     text/*) nvim $file;;
-    audio/*) cvlc $file;;
-    video/*) vlc $file;;
+    audio/*) mpv $file;;
+    video/*) mpv $file;;
     image/svg+xml) firefox $file;; 
     image/*) nsxiv-dir $file | lffromnsx;; 
     font/*) fontforge $file;;
@@ -283,10 +283,20 @@ cmd fzf_jump ${{
 }}
 map go :fzf_jump
 
-map i &{{
-	nsxiv . -r -o -t | lffromnsx
+cmd nsxr &{{
+	nsxiv -r -o -t . | lffromnsx
 }}
 
+cmd nsxclip &{{
+	nsxiv -o -t . | imgclipboard
+}}
+
+map i &{{
+	file=$(basename $(echo $f))
+	if file --mime-type -b "$file" | grep -q '^image/'; then
+  		nsxiv "$file"
+	fi
+}}
 
 map tig !tig 
 

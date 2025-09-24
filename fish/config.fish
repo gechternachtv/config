@@ -1,6 +1,6 @@
 if status is-interactive
 
-
+	set -Ux TERM "alacritty"
 	set -Ux GOPATH "$HOME/go"
 	set -Ux BUN_INSTALL "$HOME/.bun"
 	set -Ux GO111MODULE "on"
@@ -15,4 +15,9 @@ if status is-interactive
 	alias neofetch='fastfetch'
 
 	fish_add_path ~/bin ~/godot/bin $BUN_INSTALL/bin
+
+	bind \cl 'clear;fish_greeting'
+	bind \cn 'nohup $TERM >/dev/null 2>&1 & disown'
+	bind \ct 'tmux'
+
 end

@@ -9,6 +9,7 @@ SETUVAR --export GTK_FONT_NAME:DejaVu\x20Sans\x2011
 SETUVAR --export GTK_THEME:Adwaita\x3adark
 SETUVAR --export MICMUTED:false
 SETUVAR --export --path PATH:/home/gechternacht/bin
+SETUVAR --export TERM:alacritty
 SETUVAR --export TIMEZONEDB_KEY:4D1OTUUH9VHO
 SETUVAR --export XDG_CONFIG_HOME:/home/gechternacht/\x2econfig
 SETUVAR --export ZIPCODE:25640\x2d262
