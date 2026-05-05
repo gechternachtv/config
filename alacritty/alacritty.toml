@@ -1,0 +1,72 @@
+
+[colors.bright]
+black = "0x373b41"
+blue = "0xd096a4"
+cyan = "0x884e5a"
+green = "0x478c7c"
+magenta = "0xb294bb"
+red = "0xc65169"
+white = "0xc5c8c6"
+yellow = "0xc1b48e"
+
+[colors.normal]
+black = "0x060807"
+blue = "0x008080"
+cyan = "0x40e0d0"
+green = "0x2c815c"
+magenta = "0x85678f"
+red = "0x953f51"
+white = "0x707880"
+yellow = "0xc1b48e"
+
+[colors.primary]
+background = "0x34302B"
+foreground = "0xd096a4"
+
+[font]
+size = 10.0
+
+[font.normal]
+family = "terminus"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ToggleViMode"
+key = "I"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollHalfPageUp"
+key = "K"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollHalfPageDown"
+key = "J"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "Insert"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[window]
+opacity = 1
+
+[window.padding]
+x = 19
+y = 14
