@@ -9,6 +9,7 @@ if status is-interactive
 	set -Ux theme_title_display_user yes
 	set -Ux XDG_CONFIG_HOME "/home/gechternacht/.config"
 
+	alias firefox='firefox-developer-edition'
 	alias vim='nvim'
 	alias cuda='cudatext'
 	alias code='vscodium'
@@ -16,8 +17,7 @@ if status is-interactive
 
 	fish_add_path ~/bin ~/godot/bin $BUN_INSTALL/bin
 
-	bind \cl 'clear;fish_greeting'
-	bind \cn 'nohup $TERM >/dev/null 2>&1 & disown'
+	bind \cl 'clear;fish_greeting;fish_prompt'
 	bind \ct 'tmux'
 
 end
