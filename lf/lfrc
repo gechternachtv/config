@@ -248,7 +248,7 @@ cmd q $TERM
 
 
 map <c-l> :clear; unselect;
-map <backspace2> set hidden!
+map <backspace> set hidden!
 
 map DD delete
 

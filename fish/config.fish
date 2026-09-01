@@ -14,6 +14,7 @@ if status is-interactive
 	alias cuda='cudatext'
 	alias code='vscodium'
 	alias neofetch='fastfetch'
+	alias seed='transmission-daemon --config-dir ~/.config/transmission --foreground --log-debug'
 
 	fish_add_path ~/bin ~/godot/bin $BUN_INSTALL/bin
 
